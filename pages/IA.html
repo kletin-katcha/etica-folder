@@ -3,60 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso da IA para Otimizar o Trabalho</title>
-    <!-- O caminho para o CSS foi atualizado -->
+    <title>IA no Trabalho | Panorama Digital</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <header class="content-page-header">
-        <h1>Uso da IA para Otimizar o Trabalho</h1>
-        <!-- O caminho para o index.html foi atualizado -->
-        <div class="back-link">
-            <a href="../index.html">&larr; Voltar para a Página Principal</a>
+    <header class="site-header">
+        <div class="logo">
+            <a href="../index.html" style="text-decoration: none; color: inherit;">
+                <h1>Panorama Digital</h1>
+            </a>
         </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="ia.html" class="active">IA no Trabalho</a></li>
+                <li><a href="vazamento-dados.html">Vazamento de Dados</a></li>
+                <li><a href="etica-legislacao.html">Ética</a></li>
+                <li><a href="desinformacao.html">Desinformação</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <section class="page-hero">
+        <h1>IA: Sua Nova Colega de Trabalho</h1>
+        <p>Entenda como a Inteligência Artificial está ajudando a tornar o trabalho mais simples e produtivo.</p>
+    </section>
+
     <main class="container">
-        <!-- Seção 1: Introdução -->
+        
         <section class="content-section">
-            <h2>O que é Inteligência Artificial no Contexto Profissional?</h2>
+            <h2>Afinal, o que é essa tal de IA?</h2>
             <p>
-                A Inteligência Artificial (IA) refere-se a sistemas ou máquinas que imitam a inteligência humana para realizar tarefas, podendo se aprimorar iterativamente com base nas informações que coletam. No ambiente de trabalho, a IA não se limita a robôs, mas abrange softwares, algoritmos e plataformas que automatizam processos, analisam grandes volumes de dados e auxiliam na tomada de decisões estratégicas.
+                Pense na Inteligência Artificial (IA) como um programa de computador super avançado, treinado para "pensar" e aprender como um ser humano. No trabalho, em vez de robôs físicos, a IA geralmente aparece como sistemas inteligentes que podem organizar e-mails, analisar dados de vendas ou até mesmo atender clientes.
             </p>
             <p>
-                O objetivo principal é aumentar a eficiência, reduzir erros humanos e liberar os profissionais para se concentrarem em atividades mais criativas e estratégicas, que exigem pensamento crítico e empatia.
+                O grande objetivo é simples: fazer o trabalho pesado e repetitivo para que as pessoas possam usar seu tempo em tarefas que exigem criatividade e pensamento estratégico.
             </p>
         </section>
 
-        <!-- Seção 2: Exemplos Práticos -->
+        
         <section class="content-section">
-            <h2>Exemplos de Otimização com IA</h2>
+            <h2>Exemplos no Dia a Dia</h2>
             <p>
-                Aqui vocês podem listar e descrever exemplos práticos de como a IA está sendo usada. Alguns tópicos que podem ser abordados:
+                Você provavelmente já usa a IA e nem percebe. No ambiente de trabalho, ela aparece em várias formas:
             </p>
             <ul>
-                <li><strong>Automação de Tarefas Repetitivas:</strong> Preenchimento de planilhas, agendamento de reuniões, triagem de e-mails.</li>
-                <li><strong>Análise Preditiva:</strong> Previsão de vendas, manutenção de equipamentos, análise de risco de crédito.</li>
-                <li><strong>Atendimento ao Cliente:</strong> Chatbots que resolvem dúvidas comuns 24/7.</li>
-                <li><strong>Marketing e Vendas:</strong> Personalização de campanhas e recomendações de produtos.</li>
-                <li><strong>Recursos Humanos:</strong> Triagem de currículos e análise de perfil de candidatos.</li>
+                <li><strong>Tarefas chatas, resolvidas:</strong> Sistemas que preenchem planilhas e agendam reuniões automaticamente.</li>
+                <li><strong>Prevendo o futuro:</strong> Programas que analisam dados para prever quais produtos vão vender mais.</li>
+                <li><strong>Atendimento 24h:</strong> Robôs de chat (chatbots) que respondem às dúvidas mais comuns dos clientes a qualquer hora.</li>
+                <li><strong>Marketing esperto:</strong> Ferramentas que ajudam a mostrar os anúncios certos para as pessoas certas.</li>
+                <li><strong>RH mais justo:</strong> Sistemas que ajudam a selecionar currículos de forma imparcial, focando apenas nas habilidades.</li>
             </ul>
         </section>
 
-         <!-- Seção 3: O Futuro do Trabalho -->
+         
          <section class="content-section">
-            <h2>O Futuro do Trabalho e as Novas Habilidades</h2>
+            <h2>Preciso ter medo de perder o emprego?</h2>
             <p>
-                Nesta seção, vocês podem discutir como a IA está mudando o mercado, extinguindo algumas funções e criando outras. É um bom lugar para falar sobre a importância de novas habilidades (soft skills e hard skills) para os profissionais do futuro, como pensamento analítico, criatividade e alfabetização em dados.
+                É normal se preocupar, mas a história mostra que a tecnologia mais cria do que destrói empregos. Algumas funções repetitivas podem diminuir, mas muitas outras, que exigem novas habilidades, vão surgir. O segredo é estar disposto a aprender. Profissionais que souberem usar a IA como uma ferramenta para melhorar seu trabalho terão ainda mais valor no mercado.
             </p>
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2024 - Grupo 2: Uso da IA para Otimizar o Trabalho</p>
+        <p>&copy; 2024 - Projeto Panorama Digital. Todos os direitos reservados.</p>
     </footer>
+
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNavUl = document.querySelector('.main-nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            mainNavUl.classList.toggle('nav-active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
+
