@@ -14,10 +14,17 @@
             <h1>Tecnologia & Sociedade</h1>
         </div>
         <nav class="main-nav">
+            <!-- Botão do menu hambúrguer para telas pequenas -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="pages/IA.html">IA no Trabalho</a></li>
-                <li><a href="pages/vazamento-dados.html">Dados</a></li>
+                <li><a href="pages/ia.html">IA no Trabalho</a></li>
+                <!-- Texto do link foi atualizado para ser mais claro -->
+                <li><a href="pages/vazamento-dados.html">Vazamento de Dados</a></li>
                 <li><a href="pages/etica-legislacao.html">Ética</a></li>
                 <li><a href="pages/desinformacao.html">Desinformação</a></li>
             </ul>
@@ -82,7 +89,16 @@
         <p>&copy; 2024 - Trabalho Interdisciplinar. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Script para o menu hambúrguer -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNavUl = document.querySelector('.main-nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            mainNavUl.classList.toggle('nav-active');
+        });
+    </script>
+
 </body>
 </html>
-
 
