@@ -298,20 +298,24 @@ body {
 
 @media (max-width: 850px) {
     .menu-toggle { display: flex; }
+    .main-nav { order: -1; } /* Coloca o menu de navegação (com o botão) primeiro */
+    .logo { margin: 0 auto; } /* Centraliza o logo quando o menu está na esquerda */
+
     .main-nav ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         position: fixed;
-        top: 0; right: 0;
+        top: 0; 
+        left: 0; /* MUDANÇA: menu vem da esquerda */
         width: 70%; max-width: 300px;
         height: 100vh;
         background-color: var(--cor-caixas);
         padding-top: 5rem;
-        transform: translateX(100%);
+        transform: translateX(-100%); /* MUDANÇA: menu começa fora da tela à esquerda */
         transition: transform 0.3s ease-in-out;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1); /* MUDANÇA: sombra na direita */
     }
     .main-nav ul.nav-active { transform: translateX(0); }
     .main-nav li { margin: 0; width: 100%; text-align: center; }
